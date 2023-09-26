@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Taufik Akbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="icon" href="asset/icon.svg" />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="asset/logo.png" alt="header-logo" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tambahbok">BookShelfApps</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content" id="about">
+        <article class="content-description">
+          <h1>BookShelfApss</h1>
+          <p>
+            Selamat Datang Di BookShelfApss dimana Website ini merupakan<br />
+            website yang dapat membooking sebuah buku.
+          </p>
+          <a href="#tambahbok"><button>Mulai Sekarang</button></a>
+        </article>
+
+        <!-- Aside Content -->
+        <aside>
+          <article class="profile-detail">
+            <header class="card">
+              <h2>The Creator</h2>
+              <figure>
+                <img src="asset/poto1.jpg" alt="myprofile" id="poto" />
+                <figcaption><b>Muhammad Taufik Akbar</b></figcaption>
+              </figure>
+            </header>
+          </article>
+        </aside>
+      </div>
+
+      <!-- Bookshelf-content -->
+      <div class="book-wrapper" id="tambahbok">
+        <div class="judul-book"><h1>Bookshelf Apps</h1></div>
+
+        <!-- Bookshelf-content-Add -->
+        <section>
+          <div class="form-container">
+            <h2 class="title">Tambah Buku Baru</h2>
+            <form id="form-tambah-Buku" action="" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="judul"
+                  id="judul"
+                  placeholder=""
+                  required
+                />
+                <label for="judul">Judul</label>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="penulis"
+                    id="penulis"
+                    placeholder=""
+                    required
+                  />
+                  <label for="penulis">Penulis</label>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="number"
+                    name="tahun"
+                    id="tahun"
+                    placeholder=""
+                    required
+                  />
+                  <label for="tahun">Tahun</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  name="isReading"
+                  id="isReading"
+                  placeholder=""
+                />
+                <label for="isReading">Selesai dibaca</label>
+              </div>
+              <button type="submit" class="btn-submit">Simpan</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Bookshelf-content-Search -->
+        <section>
+          <div class="search-container-book">
+            <h2 class="title">Cari Buku</h2>
+            <form id="form-container-search" action="" method="post">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="searchBook"
+                  id="searchBook"
+                  placeholder=""
+                />
+                <label for="searchBook">Cari Buku</label>
+              </div>
+              <div class="form-container-search-bottom">
+                <button type="reset" class="btn-reset">
+                  <i class="bx bx-reset"></i>
+                </button>
+                <button type="submit" class="btn-search">
+                  <i class="bx bx-search-alt-2"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section>
+          <div class="unread-container-book">
+            <h2 class="title">Belum Dibaca</h2>
+            <div id="belumDibaca"></div>
+          </div>
+        </section>
+
+        <section>
+          <div class="read-container-book">
+            <h2 class="title">Sudah Dibaca</h2>
+            <div id="sudahDibaca"></div>
+          </div>
+        </section>
+
+        <!--  -->
+      </div>
+    </main>
+    <footer>
+      <small>Copyright &copy; Muhammad Taufik Akbar </small>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
